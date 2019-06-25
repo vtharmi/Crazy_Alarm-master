@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Crazy</string>
+    <string name="new_alarm">NEW ALARM</string>
+    <string name="enter_alarm_name">Enter Alarm Name</string>
+    <string name="tone">Tone :</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_alarm_tone">Select Alarm Tone</string>
+    <string name="alarm_name_pop">Alarm Name</string>
+    <string name="time_pop">Time</string>
+    <string name="solve_quiz_pop">Solve Quiz</string>
+</resources>

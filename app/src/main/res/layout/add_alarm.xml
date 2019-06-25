@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="@string/new_alarm"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#000000"
+        android:foregroundTint="#000000"
+        android:headerBackground="@color/common_google_signin_btn_text_dark_focused"
+        android:numbersSelectorColor="#0A0A0A"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/etName"
+        app:layout_constraintDimensionRatio="w,5:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:autofillHints=""
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sc"
+        android:foregroundTint="#000000"
+        android:hint="@string/enter_alarm_name"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHighlight="#4B0A0A0A"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btnTone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="@string/tone"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTone"
+        app:layout_constraintEnd_toStartOf="@+id/btnTone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTone" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="@string/add"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,3:1"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="@string/cancel"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,3:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd" />
+
+    <Button
+        android:id="@+id/btnTone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="56dp"
+        android:drawableEnd="@drawable/ic_down_arrow"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="@string/select_alarm_tone"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/numberPicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="Quiz Count :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/numberPicker"
+        app:layout_constraintEnd_toStartOf="@+id/numberPicker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/numberPicker" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#000000"
+        android:foregroundTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnCancel"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/btnTone" />
+
+
+</android.support.constraint.ConstraintLayout>

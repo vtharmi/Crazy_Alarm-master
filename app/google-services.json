@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "389075676591",
+    "firebase_url": "https://crazy-alarm-ctse.firebaseio.com",
+    "project_id": "crazy-alarm-ctse",
+    "storage_bucket": "crazy-alarm-ctse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389075676591:android:5e8908ddf2fb0691",
+        "android_client_info": {
+          "package_name": "com.example.crazyalarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389075676591-5ipnbslfqq3abqvr7450scec3edsnv7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBByhUoBdsGXooJnl8db0P-HDxOcOg5uWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389075676591-5ipnbslfqq3abqvr7450scec3edsnv7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
